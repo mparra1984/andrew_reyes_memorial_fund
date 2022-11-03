@@ -11445,7 +11445,6 @@ html {
 }
 .masthead .masthead-avatar {
   width: 80rem;
-  vertical-align:baseline !important;
 }
 
 @media (min-width: 992px) {
