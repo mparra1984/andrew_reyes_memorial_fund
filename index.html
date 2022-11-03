@@ -173,25 +173,25 @@
 
                                 <label for="school">School</label>
                                 <input type="text" class="form-control mb-3" id="inputSchool" placeholder="Enter School Name"
-                                    name="school" required>
+                                    name="School:" required>
 
                                 <label for="grade">Grade</label>
                                 <input type="text" class="form-control mb-3" id="inputGrade" placeholder="Enter Grade Level"
-                                    name="grade" required>
+                                    name="Grade:" required>
 
                                 <label for="coach">Coach</label>
                                 <input type="text" class="form-control mb-3" id="inputCoach" placeholder="Enter Coach Name"
-                                    name="coach" required>
+                                    name="Coach:" required>
 
                                 <label for="division" class="mb-2">Division (please select 1)</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="inputLevel" value="Recreational" id="inputRec" checked>
+                                        <input class="form-check-input" type="radio" name="Division:" value="Recreational" id="inputRec" checked>
                                         <label class="form-check-label" for="inputRec" >
                                           Recreational
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="inputLevel" value="Competitive" id="inputComp">
+                                        <input class="form-check-input" type="radio" name="Division:" value="Competitive" id="inputComp">
                                         <label class="form-check-label" for="inputComp">
                                           Competitive
                                         </label>
@@ -199,12 +199,12 @@
 
                                 <label for="email" class="mt-3">Email</label>
                                 <input type="email" class="form-control mb-3" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address"
-                                    name="email" required>
+                                    name="Email:" required>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
 
                                 <label for="phone">Phone</label>
                                 <input type="tel" class="form-control mb-3" id="inputPhone" placeholder="Enter Phone Number"
-                                    name="phone" required>
+                                    name="Phone:" required>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
@@ -235,30 +235,29 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" action="http://formspree.io/mparra1984@gmail.com" method="POST" name="sentMessage"
-                            novalidate="novalidate"data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="https://formspree.io/f/mdojpjge" method="POST" name="sentMessage" novalidate="novalidate">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" name="Full Name:" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" name="Email:/>
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" name="Phone:" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" name="Message:"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -280,7 +279,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
